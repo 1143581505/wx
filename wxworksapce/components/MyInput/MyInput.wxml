@@ -1,0 +1,6 @@
+<!--components/MyInput/MyInput.wxml-->
+<view class="search">
+  <image class="search_img" src="../../icons/search.png"></image>
+  <input class="search_input" placeholder="请输入药品名，供应商，药品类型相关信息"/>
+  <image class="refresh_img" src="../../icons/refresh_blank.png"></image>
+</view>

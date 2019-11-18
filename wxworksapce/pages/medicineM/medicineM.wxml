@@ -1,0 +1,22 @@
+<!--medicineM.wxml-->
+<view class="medicineM">
+  <!-- 顶部导航 -->
+  <MyTitle></MyTitle>
+  <!-- 搜索框 -->
+  <MyInput></MyInput>
+  <!-- 按钮组 -->
+  <view class="btns-medicineM">
+    <button><span>库存管理</span></button>
+    <button><span>厂家查询</span></button>
+    <button><span>药品反馈</span></button>
+    <button><span>联系我们</span></button>
+    <button><span>个人领用管理</span></button>
+    <button><span>区县领用管理</span></button>
+    <button><span>医院领用管理</span></button>
+  </view>
+  <view class="table-outer">
+   <view class="table-inner">
+    
+   </view>
+  </view>
+</view> 

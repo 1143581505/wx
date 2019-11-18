@@ -1,0 +1,4 @@
+<view class="feedback">
+  <MyTitle></MyTitle>
+  <MyButton buttonList="{{buttonList}}"></MyButton>
+</view>

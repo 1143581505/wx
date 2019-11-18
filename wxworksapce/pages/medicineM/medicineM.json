@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "药品领用",
+  "usingComponents": {
+    "MyTitle": "../components/MyTitle/MyTitle",
+    "MyInput": "../components/MyInput/MyInput"
+  }
+}

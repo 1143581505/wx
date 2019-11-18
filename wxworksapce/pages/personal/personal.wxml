@@ -1,0 +1,7 @@
+<!--pages/personal/personal.wxml-->
+<view class="personal">
+  <!-- 顶部导航 -->
+  <MyTitle></MyTitle>
+  <!-- 搜索框 -->
+  <MyInput></MyInput>
+</view>
