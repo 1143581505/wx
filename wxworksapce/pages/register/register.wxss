@@ -1,0 +1,38 @@
+.container{
+    padding: 50rpx 0;
+}
+input{
+    border: 1rpx solid gray;
+    height: 80rpx;
+    border-radius: 20rpx;
+    padding-left: 20rpx;
+    float: right;
+}
+form{
+    width: 90%;
+    border: 1rpx solid#CCCCCC;
+    border-radius: 50rpx;
+    position: relative;
+    padding: 10rpx 20rpx;
+    margin-top: 30rpx;
+}
+.form-item{
+    line-height: 78rpx;
+    overflow: hidden;
+    margin: 16rpx 0;
+}
+.form-item label{
+    float: left;
+    margin-top: 6rpx;
+}
+button{
+    height: 80rpx;
+    line-height: 80rpx;
+    font-size: 36rpx;
+}
+.tips{
+    font-size: 32rpx;
+    text-align: center;
+    color: red;
+    height: 37rpx;
+}
