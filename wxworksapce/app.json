@@ -1,7 +1,8 @@
 {
   "pages": [
+    "pages/feedback/feedback",
     "pages/userdurg/userdurg",
-	  "pages/feedback/feedback",
+	 
     "pages/medicineM/medicineM",
     "pages/login/login",
     "pages/forget-password/forget-password",

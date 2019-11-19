@@ -90,7 +90,16 @@ textarea{
 	width:200rpx;
 	height: 60rpx;
 }
-
+.buttom view{
+	float: left;
+	margin-left: 20rpx;
+	color: #5FB6CC;
+	font-size: 1rem;
+	
+}
+.buttom view i{
+	padding: 10rpx;
+}
 .hidden{
 	display: none;
 }
