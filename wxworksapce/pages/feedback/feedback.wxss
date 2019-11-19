@@ -1,47 +1,31 @@
-page{
-	height: 100%;
-	width: 100%;
+/* 按钮导航 */
+@import '../../utils/MyButton.wxss';
+/* 详情框 */
+@import '../../utils/frame.wxss';
+.table-outer{
+  height: calc(100% - 350rpx);
 }
-.nav{
-	width: 100%;
+.table {
+  border: 1rpx solid #666666;
 }
-.buttons{
-	width: 100%;
-	display: flex;
-	justify-content: space-around;
+.dangerButton .button{
+  background-color: red;
 }
-.buttons .button,.buttom button,.sos{
-	padding: 0;
-	margin:10rpx 20rpx 10rpx 25rpx;
-	background-color: #4bacc6;
-	border: 1px solid #666;
-	border-radius: 6px;
-	box-shadow:-6px 0 3px rgba(155, 153, 153, 0.486); 
-	font-size: 25rpx;
-	line-height: 80rpx;
-	width:300rpx;
-}
-.sos{
-	width:0rpx;
-	background: #C05046;
-	float: right;
-	
-	clear: both;
-}
+/* 反馈详情 */
 .center{
 	width: 100%;
 	display: flex;
 	justify-content: space-around;
 	flex-direction: column;
-	margin-top: 120rpx;
+	margin-top: 25rpx;
 	clear: both;
 	/* border: 1px solid red; */
 	height: 120rpx;
 	font-size: 24rpx;
 }
 .center view text {
-	margin-left: 30rpx;
-	margin-bottom: 20rpx;
+	margin-left: 18rpx;
+	margin-bottom: 18rpx;
 }
 .center .tishi{
 	height: 50rpx;
@@ -82,14 +66,22 @@ textarea{
 	opacity: .6;
 }
 .buttom{
-	/* width:24%; */
-	line-height: 60rpx;
+  display: flex;
+  justify-content: space-between;
 }
 .buttom button{
-	float: right;
-	width:200rpx;
-	height: 60rpx;
+  background-color: #05BC58;
+  margin-right: 40rpx;
+  line-height: 60rpx;
+  font-size:30rpx;
+  font-weight: 500;
+  padding: 0;
+  width: 150rpx;
+  min-height: 60rpx;
+  border: 1px solid #666;
+  border-top:2rpx solid buttonhighlight;
 }
+
 .buttom view{
 	float: left;
 	margin-left: 20rpx;

@@ -4,19 +4,48 @@
   <MyTitle></MyTitle>
   <!-- 搜索框 -->
   <MyInput></MyInput>
-  <!-- 按钮组 -->
-  <view class="btns-medicineM">
-    <button><span>库存管理</span></button>
-    <button><span>厂家查询</span></button>
-    <button><span>药品反馈</span></button>
-    <button><span>联系我们</span></button>
-    <button><span>个人领用管理</span></button>
-    <button><span>区县领用管理</span></button>
-    <button><span>医院领用管理</span></button>
+  <!-- 按钮导航 -->
+  <view class="navigator-btns">
+    <button><text>库存管理</text></button>
+    <button><text>厂家查询</text></button>
+    <button bind:tap="toFeedback"><text>药品反馈</text></button>
+    <button><text>联系我们</text></button>
+    <button bind:tap="toPersonal"><text>个人领用管理</text></button>
+    <button><text>区县领用管理</text></button>
+    <button><text>医院领用管理</text></button>
   </view>
+  <!-- 详情页 -->
   <view class="table-outer">
-   <view class="table-inner">
-    
+   <view  class="table-inner">
+    <scroll-view class="detail" scroll-y>
+      <view class="table">
+        <view class="tr bg-w">
+          <view class="th">编号</view>
+          <view class="th medicineName">药品名称</view>
+          <view class="th">规格</view>
+          <view class="th">产地</view>
+          <view class="th">单位</view>
+          <view class="th  medicineBatchNum">批号</view>
+          <view class="th">领用</view>
+        </view>
+        <view class="tr bg-g" wx:for="{{medicineList}}" wx:key="num">
+          <view class="td">{{item.num}}</view>
+          <view class="td  medicineName">{{item.name}}</view>
+          <view class="td">{{item.specification}}片</view>
+          <view class="td">{{item.production}}</view>
+          <view class="td">{{item.unit}}</view>
+          <view class="td medicineBatchNum">{{item.batchNum}}</view>
+          <view class="td">
+            <!-- {{item.receive}} -->
+            <image class="receiveImg" src="../../icons/edit_wps图片.png"></image>
+          </view>
+        </view>
+      </view>
+      <view class="table-btns">
+        <button style="background-color:#ee5046">取消</button>
+        <button style="background-color: #05BC58">提交</button>
+      </view>
+     </scroll-view>
    </view>
   </view>
 </view> 

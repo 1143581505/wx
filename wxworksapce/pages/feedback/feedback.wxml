@@ -1,20 +1,22 @@
 <view class="feedback">
+  <!-- 顶部导航 -->
   <MyTitle></MyTitle>
-  <view class="nav">
-	  <view class="buttons" >
-		  <button class="button" wx:for="{{buttonList}}">
-			  {{item.name}}
-		  </button>
-	  </view>
+  <!-- 按钮导航 -->
+  <view class="navigator-btns">
+    <view class="firstLine" hover-class="none" hover-stop-propagation="false">
+      <button><text>用药反馈</text></button>
+      <button><text>实时病例</text></button>
+      <button><text>医生建议</text></button>
+      <button><text>联系我们</text></button>
+    </view>
+    <view class="secondLine" hover-class="none" hover-stop-propagation="false">
+        <view class="" hover-class="none" hover-stop-propagation="false">
+        </view>
+        <button class="help-btn"><text>紧急求助!</text></button>
+    </view>
   </view>
-  
-  <!-- 求救按钮 -->
-	<button class="sos" style="background: #C05046;float: right; width:140rpx;margin-right: 33rpx;">
-		积极求助
-	</button>
-	
-	<!-- 中部 -->
-	<view class="center">
+  <!-- 反馈部分 -->
+  <view class="center">
 		<view>
 			<!-- <i style=" border-radius:60%;color: #fff; background-color:#2370AB;margin-left: 30rpx;" class="fa fa-arrow-circle-o-right fa-2x" aria-hidden="true"></i> -->
 			<view style=" border-radius: 50%; background-color: #2370AB;display: inline-block;margin-left: 30rpx;padding: 10rpx;">
@@ -60,7 +62,4 @@
 		</view>
 		<button bind:tap="submit" class="submit">提交</button>
 	</view>
-
 </view>
-
-

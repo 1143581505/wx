@@ -1,1 +1,7 @@
-/* pages/personal/personal.wxss */
+/* 按钮导航 */
+@import '../../utils/MyButton.wxss';
+/* 详情框 */
+@import '../../utils/frame.wxss';
+.table-outer{
+  height: calc(100% - 430rpx);
+}

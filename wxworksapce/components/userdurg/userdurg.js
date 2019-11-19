@@ -1,47 +1,50 @@
+// pages/userdurg/userdurg.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    buttonList: [{
-      name: "用药反馈",
-      url: "",
-    }, {
-      name: "实时病例",
-      url: "",
-    }, {
-      name: "医生建议",
-      url: "",
-    }, {
-      name: "联系我们",
-      url: "",
-    }],
-    illness: true,
-    userdurg: true,
-
+    docName:'',
+    showSign:true
   },
-  click() {
-    this.setData({
-      illness: false
-    })
-  },
-  click2() {
-    this.setData({
-      userdurg: false
-    })
-  },
-  submit() {
-    wx.showToast({
-      title: '谢谢你的反馈',
-      icon: 'success',
-      duration: 2000
-    });
-    this.setData({
-      userdurg: true,
-      illness: true
-    })
-  },
+	signOk(e){
+		this.setData({
+			docName:e.detail.value
+		});
+		var that =this;
+		wx.showModal({
+		  title: '提示',
+		  content: '请确认你的签名',
+		  success (res) {
+		    if (res.confirm) {
+		      that.setData({
+				    showSign:false
+			  })
+		    } else if (res.cancel) {
+			  return
+		    }
+		  }
+		})
+	},
+	pay(){
+		wx.showModal({
+		  title: '支付',
+		  content: '是否继续支付',
+		  success (res) {
+		    if (res.confirm) {
+				wx.showToast({
+				  title: '支付成功',
+				  icon: 'success',
+				  duration: 2000
+				})
+		    } else if (res.cancel) {
+		     return
+		    }
+		  }
+		})
+		
+	},
   /**
    * 生命周期函数--监听页面加载
    */

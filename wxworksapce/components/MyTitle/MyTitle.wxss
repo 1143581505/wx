@@ -1,17 +1,16 @@
 /* components/Mytitle/MyTitle.wxss */
 .my_title{
-  margin:10rpx 15rpx 5rpx 15rpx;
+  margin:10rpx 0rpx;
   display: flex;
   justify-content: space-between;
 }
-.my_title .nav-left image{
-  margin-right: 20rpx;
-}
-.my_title .nav-right image{
+.my_title .nav_left image{
   margin-left: 20rpx;
 }
-.my_title .nav-right .refresh_img{
-  /* background-color: #555; */
+.my_title .nav_right image{
+  margin-right: 20rpx;
+}
+.my_title .nav_right .refresh_img{
   border-radius: 50%;
   margin-bottom: 10rpx;
 }
