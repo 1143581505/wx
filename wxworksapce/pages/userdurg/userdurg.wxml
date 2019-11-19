@@ -1,0 +1,45 @@
+<!--pages/userdurg/userdurg.wxml-->
+<text>pages/userdurg/userdurg.wxml</text>
+
+<view class="main">
+	<view>
+		<text>
+			病因 : 急性扁桃体炎
+		</text>
+	</view>
+	<view>
+		<text>
+			主诉 : 热、咽喉伴吞咽痛三天。
+		</text>
+	</view>
+	<view>
+		<text>
+			现病史:
+		</text>
+	</view>
+	<view>
+		<text>
+			常规须与上呼吸道感染、急性咽炎、急性喉炎、急性鼻炎、扁桃体周围脓肿、智齿冠周炎、扁桃体肿瘤继发感染等鉴别。
+		</text>
+	</view>
+	<view>
+		<text>
+			患者应充分休息，远离起病诱因，清淡饮食、进流食、多饮水、加强营养及疏通大便。禁食辛辣、烧烤、油腻、戒烟戒酒。对于高热及吞咽困难者，应适当补充液体及电解质，保持体内水盐平衡。
+		</text>
+	</view>
+	<view>
+		<text decode>
+			处理:
+			&nbsp;&nbsp;(1) 复查BCG
+			&nbsp;&nbsp;(2) 阿莫西林 12粒
+			&nbsp;&nbsp;(3) 注意休息，随诊。
+		</text>
+	</view>
+	<view class="sign">
+		<text>
+			医生签名:{{docName}}
+		</text>
+		 <input style="display:{{showSign?'':'none'}}" bindblur="signOk" type="text"/>
+		<button bindtap="pay" style="float:right">在线支付</button>
+	</view>
+</view>

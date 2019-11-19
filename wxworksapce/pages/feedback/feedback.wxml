@@ -1,4 +1,54 @@
 <view class="feedback">
   <MyTitle></MyTitle>
-  <MyButton buttonList="{{buttonList}}"></MyButton>
+  <view class="nav">
+	  <view class="buttons" >
+		  <button class="button" wx:for="{{buttonList}}">
+			  {{item.name}}
+		  </button>
+	  </view>
+  </view>
+  
+  <!-- 求救按钮 -->
+	<button class="sos" style="background: #C05046;float: right; width:140rpx;margin-right: 33rpx;">
+		积极求助
+	</button>
+	
+	<!-- 中部 -->
+	<view class="center">
+		<view>
+			<i class="fa fa-camera-retro fa-5x"/>
+			<i class="fa fa-camera-retro fa-5x"/>
+			<text>用药反馈</text>
+		</view>
+		<view class="tishi">
+			<text >请及时、真实的反馈病情 , 以便我们制定更好的方案！</text>
+		</view>
+	</view>
+	
+	<!-- 消息详情 -->
+	<view class="info"> 
+		<text>基本信息</text>
+		
+		<text>病情反馈*:</text>
+		<view class="illness">
+			<textarea placeholder="输入你的反馈信息" class="{{illness?'hidden':''}}" name="" id="" cols="30" rows="1">
+				
+			</textarea>
+			<text class="{{illness?'':'hidden'}}" bind:tap="click">+</text>
+		</view>
+		<text>用药反馈*:</text>
+		<view class="userdurg">
+			<textarea placeholder="输入你的反馈用药" class="{{userdurg?'hidden':''}}" name="" id="" cols="30" rows="1">
+				
+			</textarea>
+			<text class="{{userdurg?'':'hidden'}}" bind:tap="click2">+</text>
+		</view>
+		
+	</view>
+	<view class="buttom">
+		<button bind:tap="submit" class="submit">提交</button>
+	</view>
+
 </view>
+
+

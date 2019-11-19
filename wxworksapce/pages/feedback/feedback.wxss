@@ -1,0 +1,96 @@
+page{
+	height: 100%;
+	width: 100%;
+}
+.nav{
+	width: 100%;
+}
+.buttons{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+.buttons .button,.buttom button,.sos{
+	padding: 0;
+	margin:10rpx 20rpx 10rpx 25rpx;
+	background-color: #4bacc6;
+	border: 1px solid #666;
+	border-radius: 6px;
+	box-shadow:-6px 0 3px rgba(155, 153, 153, 0.486); 
+	font-size: 25rpx;
+	line-height: 80rpx;
+	width:300rpx;
+}
+.sos{
+	width:0rpx;
+	background: #C05046;
+	float: right;
+	
+	clear: both;
+}
+.center{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	margin-top: 120rpx;
+	clear: both;
+	/* border: 1px solid red; */
+	height: 120rpx;
+	font-size: 24rpx;
+}
+.center view text {
+	margin-left: 30rpx;
+	margin-bottom: 20rpx;
+}
+.center .tishi{
+	height: 50rpx;
+	line-height: 50rpx;
+	margin: 0 30rpx;
+	border: 1px solid #797A7C;
+	background-color: #4BACC6;
+}
+.info{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	margin-top: 20rpx;
+	/* border: 1px solid red; */
+	clear: both;
+	height: 600rpx;
+	padding: 30rpx;
+}
+.info text{
+	font-size: 24rpx;
+}
+.illness,.userdurg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:1px solid #797A7C;
+	height: 30%;
+	width:90%;
+	margin-top: -50rpx;
+}
+textarea{
+	/* border: 1px solid red; */
+	height: 100%;
+}
+.illness text,.userdurg text{
+	font-size: 1.25rem;
+	opacity: .6;
+}
+.buttom{
+	/* width:24%; */
+	line-height: 60rpx;
+}
+.buttom button{
+	float: right;
+	width:200rpx;
+	height: 60rpx;
+}
+
+.hidden{
+	display: none;
+}

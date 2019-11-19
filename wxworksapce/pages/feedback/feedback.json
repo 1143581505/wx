@@ -1,7 +1,6 @@
 {
   "navigationBarTitleText": "用药反馈",
   "usingComponents": {
-    "MyTitle": "../components/MyTitle/MyTitle",
-    "MyButton":"../components/MyButton/MyButton"
+    "MyTitle": "../components/MyTitle/MyTitle"
   }
 }
