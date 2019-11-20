@@ -36,8 +36,7 @@
           <view class="td">{{item.unit}}</view>
           <view class="td medicineBatchNum">{{item.batchNum}}</view>
           <view class="td">
-            <!-- {{item.receive}} -->
-            <image class="receiveImg" src="../../icons/edit_wps图片.png"></image>
+            <i style="color:#c0c0c0" class="fa fa-file-text fa-lg" aria-hidden="true"></i>
           </view>
         </view>
       </view>

@@ -36,9 +36,7 @@
 		</text>
 	</view>
 	<view class="sign">
-		<text>
-			医生签名:{{docName}}
-		</text>
+		<text>医生签名:{{docName}}</text>
 		 <input style="display:{{showSign?'':'none'}}" bindblur="signOk" type="text"/>
 		<button bindtap="pay" style="float:right">在线支付</button>
 	</view>

@@ -26,8 +26,9 @@ form{
     margin-top: 6rpx;
 }
 button{
-    height: 80rpx;
-    line-height: 80rpx;
+    min-height: 45rpx;
+    margin-bottom: 15rpx;
+    line-height: 45rpx;
     font-size: 36rpx;
 }
 .tips{

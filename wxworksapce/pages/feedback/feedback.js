@@ -4,19 +4,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    buttonList: [{
-      name: "用药反馈",
-      url: "",
-    }, {
-      name: "实时病例",
-      url: "",
-    }, {
-      name: "医生建议",
-      url: "",
-    }, {
-      name: "联系我们",
-      url: "",
-    }],
     illness: true,
     userdurg: true,
 

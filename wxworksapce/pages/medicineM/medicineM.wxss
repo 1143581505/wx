@@ -28,10 +28,6 @@
 .medicineName,.medicineBatchNum {
   width: 80%;
 }
-.receiveImg{
-  width: 30rpx;
-  height: 30rpx;
-}
 /* 表格组的按钮 */
 .table-btns{
   display: flex;

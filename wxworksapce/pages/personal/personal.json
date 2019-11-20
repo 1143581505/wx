@@ -2,7 +2,6 @@
   "navigationBarTitleText": "个人中心",
   "usingComponents": {
     "MyTitle": "../components/MyTitle/MyTitle",
-    "MyInput": "../components/MyInput/MyInput",
-    "userdurg":"../components/userdurg/userdurg"
+    "MyInput": "../components/MyInput/MyInput"
   }
 }

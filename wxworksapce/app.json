@@ -1,13 +1,12 @@
 {
   "pages": [
-    "pages/personal/personal",
+    
     "pages/login/login",
     "pages/register/register",
     "pages/forget-password/forget-password",
     "pages/medicineM/medicineM",
     "pages/feedback/feedback",
-    
-    "pages/user/user"
+    "pages/personal/personal"
   
   ],
   "window": {
