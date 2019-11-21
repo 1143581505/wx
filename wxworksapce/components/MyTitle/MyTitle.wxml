@@ -1,14 +1,14 @@
 <!--components/Mytitle/MyTitle.wxml-->
 <view class="my_title">
   <view class="nav-left" >
-    <image style="width:60rpx;height:60rpx" class="logo_img" src="../../icons/info.png"></image>
-    <image style="width:60rpx;height:60rpx" class="map_img" src="../../icons/map.png"></image>
-    <image style="width:60rpx;height:60rpx" class="email_img" src="../../icons/email.png"></image>
+    <image bind:tap="playVoice" style="width:60rpx;height:60rpx" class="logo_img" src="../../icons/info.png"></image>
+    <image bind:tap="playMap" open-type="getUserLocation" style="width:60rpx;height:60rpx" class="map_img" src="../../icons/map.png"></image>
+    <image bind:tap="playMessage" style="width:60rpx;height:60rpx" class="email_img" src="../../icons/email.png"></image>
   </view>
 
   <view class="nav-right">
-    <image style="width:40rpx;height:40rpx;" class="refresh_img" src="../../icons/refresh.png"></image>
+    <image bind:tap="refresh" style="width:40rpx;height:40rpx;" class="refresh_img" src="../../icons/refresh.png"></image>
     <image bindtap="toHome" style="width:60rpx;height:60rpx" class="home_img" src="../../icons/home.png"></image>
-    <image style="width:60rpx;height:60rpx" class="video_img" src="../../icons/video.png"></image>
+    <image bind:tap="playVideo" style="width:60rpx;height:60rpx" class="video_img" src="../../icons/video.png"></image>
   </view>
 </view>

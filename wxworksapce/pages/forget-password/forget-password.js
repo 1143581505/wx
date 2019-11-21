@@ -79,7 +79,10 @@ Page({
       wx.showToast({
         title:'修改密码',
         success:()=>{
-
+          password[formData.username] = formData.password;
+          wx.redirectTo({
+            url:'../login/login',
+          });
         }
       });
     }

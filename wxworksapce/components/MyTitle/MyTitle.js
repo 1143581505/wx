@@ -1,3 +1,6 @@
+var app = getApp();
+var {bgMusic} = app.globalData;
+
 // components/Mytitle/MyTitle.js
 Component({
   /**
@@ -19,10 +22,31 @@ Component({
    */
   methods: {
     toHome: function () {
-      console.log("124");
       wx.reLaunch({
         url: '../../pages/medicineM/medicineM'
       });
-    }
+    },
+    playVoice: function(){
+      bgMusic.paused?bgMusic.play():bgMusic.pause();
+    },
+    playMap: function(){
+      wx.authorize({scope: "scope.userLocation",});
+      wx.chooseLocation();
+    },
+    playMessage:function(){
+
+    },
+    refresh:function(){
+      this.triggerEvent('myevent');
+    },
+    playVideo:function(){},
+  },
+  //组件的生命周期
+  lifetimes:{
+    attached:function(){
+    },
+    detached:function(){
+      
+    },
   }
 })

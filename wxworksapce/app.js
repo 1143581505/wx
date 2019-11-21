@@ -6,5 +6,6 @@ App({
         num:0,//注册用户的数量
         globalEmail:{},//邮箱保存
         gloablPhone:{},//电话保存
+        bgMusic: wx.getBackgroundAudioManager(),//背景音乐的播放
     },
 })
