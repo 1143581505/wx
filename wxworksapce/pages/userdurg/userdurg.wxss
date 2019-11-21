@@ -1,0 +1,35 @@
+/* pages/userdurg/userdurg.wxss */
+page{
+	height: 100%;
+	width:100%;
+}
+.main{
+	height: 63%;
+	font-size: 12px;
+	margin: 20rpx;
+	border: 5px solid #4BACC6;
+	padding: 30rpx;
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	
+}
+.sign button{
+	font-size: 12px;
+	float: right;
+	background-color: #05BC58;
+	box-shadow: ;
+	width: 200rpx;
+	color: black;
+}
+.sign text{
+	display: inline-block;
+}
+.sign input{
+	/* float: left; */
+	height: 10rpx;
+	width: 60rpx;
+	min-height: .8rem;
+	display: inline-block;
+	border:1px solid #ccc;
+}

@@ -1,34 +1,46 @@
-
-.btns-medicineM{
-  margin-bottom: 30rpx;
-}
-.btns-medicineM button{
-  padding: 0;
-  margin:10rpx 20rpx 10rpx 25rpx;
-  width: 140rpx;
-  height: 80rpx;
-  background-color: #4bacc6;
-  border: 1px solid #666;
-  border-radius: 10px;
-  display: inline-flex;
-  box-shadow:-6px 0 3px rgba(155, 153, 153, 0.486); 
-}
-.btns-medicineM button span{
-  margin: auto;
-  font-weight: 700;
-  font-size: 20rpx;
-}
+/* 按钮组 */
+@import '../../utils/MyButton.wxss';
+/* 详情框 */
+@import '../../utils/frame.wxss';
 .table-outer{
-  width: 710rpx;
-  height: 730rpx;
-  border:1px solid;
-  margin: auto;
-  background-color: #4bacc6;
+  height:calc(100% - 430rpx);
 }
-.table-inner{
-  width: 690rpx;
-  height: 710rpx;
-  border:1px solid;
-  margin:9rpx;
-  background-color: #ffffff;
+/* 药品数据 */
+.table{
+  border:1rpx solid #ccc;
+}
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th,.td {
+  font-size: 20rpx;
+  font-weight: 700;
+  width: 40%;
+  padding: 10rpx;
+  text-align: center;
+  border: 1rpx solid;
+}
+.td{
+  font-weight: 500;
+}
+.medicineName,.medicineBatchNum {
+  width: 80%;
+}
+/* 表格组的按钮 */
+.table-btns{
+  display: flex;
+  justify-content: flex-end;
+}
+.table-btns button{
+  line-height: 60rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  padding: 0;
+  margin: 10rpx 20rpx;
+  width: 140rpx;
+  min-height: 60rpx;
+  border: 1px solid #666;
+  border-top:2rpx solid buttonhighlight;
 }

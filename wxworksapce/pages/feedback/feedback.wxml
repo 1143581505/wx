@@ -1,4 +1,65 @@
 <view class="feedback">
+  <!-- 顶部导航 -->
   <MyTitle></MyTitle>
-  <MyButton buttonList="{{buttonList}}"></MyButton>
+  <!-- 按钮导航 -->
+  <view class="navigator-btns">
+    <view class="firstLine" hover-class="none" hover-stop-propagation="false">
+      <button><text>用药反馈</text></button>
+      <button><text>实时病例</text></button>
+      <button><text>医生建议</text></button>
+      <button><text>联系我们</text></button>
+    </view>
+    <view class="secondLine" hover-class="none" hover-stop-propagation="false">
+        <view class="" hover-class="none" hover-stop-propagation="false">
+        </view>
+        <button class="help-btn"><text>紧急求助!</text></button>
+    </view>
+  </view>
+  <!-- 反馈部分 -->
+  <view class="center">
+		<view>
+			<!-- <i style=" border-radius:60%;color: #fff; background-color:#2370AB;margin-left: 30rpx;" class="fa fa-arrow-circle-o-right fa-2x" aria-hidden="true"></i> -->
+			<view style=" border-radius: 50%; background-color: #2370AB;display: inline-block;margin-left: 30rpx;padding: 10rpx;">
+				<i style="color: #FFFFFF;" class="fa fa-arrow-right fa-lg" aria-hidden="true"></i>
+			</view>
+			<text>用药反馈</text>
+		</view>
+		<view class="tishi">
+			<text >请及时、真实的反馈病情 , 以便我们制定更好的方案！</text>
+		</view>
+	</view>
+	
+	<!-- 消息详情 -->
+	<view class="info"> 
+		<text>基本信息</text>
+		
+		<text>病情反馈*:</text>
+		<view class="illness">
+			<textarea placeholder="输入你的反馈信息" class="{{illness?'hidden':''}}" name="" id="" cols="30" rows="1">
+			</textarea>
+			<view class="{{illness?'':'hidden'}}" bind:tap="click">
+				<text >+</text>
+				<i style="color:#5FB6CC ;" class="fa fa-clipboard" aria-hidden="true"></i>
+			</view>
+			
+		</view>
+		<text>用药反馈*:</text>
+		<view class="userdurg">
+			<textarea placeholder="输入你的反馈用药" class="{{userdurg?'hidden':''}}" name="" id="" cols="30" rows="1">
+			</textarea>
+			<view class="{{userdurg?'':'hidden'}}" bind:tap="click2">
+				<text >+</text>
+				<i style="color:#5FB6CC ;" class="fa fa-clipboard" aria-hidden="true"></i>
+			</view>
+		</view>
+		
+	</view>
+	<view class="buttom">
+		<view >
+			<i class="fa fa-floppy-o" aria-hidden="true"></i>
+			<i class="fa fa-link" aria-hidden="true"></i>
+			<i class="fa fa-file-text-o" aria-hidden="true"></i>
+		</view>
+		<button bind:tap="submit" class="submit">提交</button>
+	</view>
 </view>

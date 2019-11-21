@@ -1,0 +1,97 @@
+/* 按钮导航 */
+@import '../../utils/MyButton.wxss';
+/* 详情框 */
+@import '../../utils/frame.wxss';
+.table-outer{
+  height: calc(100% - 350rpx);
+}
+.table {
+  border: 1rpx solid #666666;
+}
+.dangerButton .button{
+  background-color: red;
+}
+/* 反馈详情 */
+.center{
+	width: 100%;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	margin-top: 25rpx;
+	clear: both;
+	/* border: 1px solid red; */
+	height: 120rpx;
+	font-size: 24rpx;
+}
+.center view text {
+	margin-left: 18rpx;
+	margin-bottom: 18rpx;
+}
+.center .tishi{
+	height: 50rpx;
+	line-height: 50rpx;
+	margin: 0 30rpx;
+	border: 1px solid #797A7C;
+	background-color: #4BACC6;
+}
+.info{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	margin-top: 20rpx;
+	/* border: 1px solid red; */
+	clear: both;
+	height: 600rpx;
+	padding: 30rpx;
+}
+.info text{
+	font-size: 24rpx;
+}
+.illness,.userdurg{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border:1px solid #797A7C;
+	height: 30%;
+	width:90%;
+	margin-top: -50rpx;
+}
+textarea{
+	/* border: 1px solid red; */
+	height: 100%;
+}
+.illness text,.userdurg text{
+	font-size: 1.25rem;
+	opacity: .6;
+}
+.buttom{
+  display: flex;
+  justify-content: space-between;
+}
+.buttom button{
+  background-color: #05BC58;
+  margin-right: 40rpx;
+  line-height: 60rpx;
+  font-size:30rpx;
+  font-weight: 500;
+  padding: 0;
+  width: 150rpx;
+  min-height: 60rpx;
+  border: 1px solid #666;
+  border-top:2rpx solid buttonhighlight;
+}
+
+.buttom view{
+	float: left;
+	margin-left: 20rpx;
+	color: #5FB6CC;
+	font-size: 1rem;
+	
+}
+.buttom view i{
+	padding: 10rpx;
+}
+.hidden{
+	display: none;
+}

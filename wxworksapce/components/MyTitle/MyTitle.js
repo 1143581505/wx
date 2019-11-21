@@ -34,7 +34,9 @@ Component({
       wx.chooseLocation();
     },
     playMessage:function(){
-
+      wx.wx.navigateTo({
+        url: '../../pages/message/message',
+      });
     },
     refresh:function(){
       this.triggerEvent('myevent');

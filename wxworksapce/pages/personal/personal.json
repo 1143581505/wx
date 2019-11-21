@@ -1,6 +1,5 @@
 {
   "navigationBarTitleText": "个人中心",
-  "usingComponents": {},
   "usingComponents": {
     "MyTitle": "../components/MyTitle/MyTitle",
     "MyInput": "../components/MyInput/MyInput"

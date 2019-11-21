@@ -19,7 +19,7 @@ Page({
     let{globalUsername,globalPassword,num}=app.globalData;
     if(username===adminUsername&&password===adminPassword){
       wx.redirectTo({
-        url:'../user/user',
+        url:'../medicineM/medicineM',
       });
     }else{
       if(username===null||password===null){
@@ -38,7 +38,7 @@ Page({
           exit = true;
           if(globalPassword[item]===password){
             wx.redirectTo({
-              url:'../user/user',
+              url:'../medicineM/medicineM',
             });
             this.setData({
               tipsText:'',

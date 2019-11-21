@@ -1,12 +1,15 @@
 {
   "pages": [
-    "pages/medicineM/medicineM",
+    
     "pages/login/login",
-    "pages/forget-password/forget-password",
+    "pages/personal/personal",
     "pages/register/register",
-    "pages/user/user",
+    "pages/forget-password/forget-password",
+    "pages/medicineM/medicineM",
     "pages/feedback/feedback",
-    "pages/personal/personal"
+    "pages/user/user",
+	"pages/message/message"
+  
   ],
   "permission": {
     "scope.userLocation": {
@@ -16,9 +19,10 @@
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "药监局",
     "navigationBarTextStyle": "black"
   },
   "style": "v2",
   "sitemapLocation": "sitemap.json"
+  
 }
