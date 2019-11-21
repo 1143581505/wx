@@ -34,7 +34,7 @@ Component({
       wx.chooseLocation();
     },
     playMessage:function(){
-      wx.wx.navigateTo({
+      wx.navigateTo({
         url: '../../pages/message/message',
       });
     },

@@ -18,7 +18,7 @@ Page({
     let{username,password,adminPassword,adminUsername}=this.data;
     let{globalUsername,globalPassword,num}=app.globalData;
     if(username===adminUsername&&password===adminPassword){
-      wx.redirectTo({
+      wx.reLaunch({
         url:'../medicineM/medicineM',
       });
     }else{
