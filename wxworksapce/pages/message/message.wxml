@@ -1,0 +1,17 @@
+<!--pages/message/message.wxml-->
+<view class="message">
+	<view class="search">
+		<i class="fa fa-search" aria-hidden="true"></i>
+		<input placeholder="" type="text"/>
+	</view>
+	
+	<scroll-view class="display">
+		<view  wx:for="{{messages}}" class="row" bind:tap="toRead" data-index="{{index}}">
+			<view class="title">
+				<i style="color:blue;display: {{item.read?'none':''}};" class="fa fa-circle" aria-hidden="true"></i>
+			{{item.title}}</view>
+			<view class="time">{{item.time}}</view>
+			<view class="message">{{item.message}}</view>
+		</view>
+	</scroll-view>
+</view>

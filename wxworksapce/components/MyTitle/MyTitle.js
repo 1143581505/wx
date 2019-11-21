@@ -20,9 +20,15 @@ Component({
   methods: {
     toHome: function () {
       console.log("124");
-      wx.reLaunch({
+      wx.navigateTo({
         url: '../../pages/medicineM/medicineM'
       });
-    }
+    },
+	toMessage: function () {
+	  console.log("124");
+	  wx.navigateTo({
+	    url: '../../pages/message/message'
+	  });
+	}
   }
 })

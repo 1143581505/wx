@@ -3,7 +3,7 @@
   <view class="nav_left" >
     <image style="width:60rpx;height:60rpx" class="logo_img" src="../../icons/info.png"></image>
     <image style="width:60rpx;height:60rpx" class="map_img" src="../../icons/map.png"></image>
-    <image style="width:60rpx;height:60rpx" class="email_img" src="../../icons/email.png"></image>
+    <image style="width:60rpx;height:60rpx" class="email_img" src="../../icons/email.png" bind:tap="toMessage"></image>
   </view>
   <view class="nav_right">
     <image style="width:40rpx;height:40rpx;" class="refresh_img" src="../../icons/refresh.png"></image>
