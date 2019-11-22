@@ -49,6 +49,11 @@ Page({
     })
 
   },
+  refresh:function(){
+    wx.redirectTo({
+      url: './personal',
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

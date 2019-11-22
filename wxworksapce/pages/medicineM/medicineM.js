@@ -1,108 +1,17 @@
 //medicineM.js
 var app = getApp();
-var {bgMusic} = app.globalData;
+var {bgMusic,medicineList} = app.globalData;
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    medicineList: [
-      {
-        "num": 1,
-        "name": "阿莫西林1",
-        "specification": 12,
-        "production": "江苏",
-        "unit": "盒",
-        "batchNum": 1010107,
-        "receive": {}
-      },
-      {
-        "num": 2,
-        "name": "阿莫西林2",
-        "specification": 12,
-        "production": "四川",
-        "unit": "盒",
-        "batchNum": 1010108,
-        "receive": {}
-      },
-      {
-        "num": 3,
-        "name": "阿莫西林3",
-        "specification": 12,
-        "production": "上海",
-        "unit": "盒",
-        "batchNum": 1010109,
-        "receive": {}
-      },
-      {
-        "num": 4,
-        "name": "阿莫西林4",
-        "specification": 12,
-        "production": "广州",
-        "unit": "盒",
-        "batchNum": 1010110,
-        "receive": {}
-      },
-      {
-        "num": 5,
-        "name": "阿莫西林5",
-        "specification": 12,
-        "production": "湖北",
-        "unit": "盒",
-        "batchNum": 1010111,
-        "receive": {}
-      },
-      {
-        "num": 6,
-        "name": "阿莫西林6",
-        "specification": 12,
-        "production": "湖北",
-        "unit": "盒",
-        "batchNum": 1010112,
-        "receive": {}
-      },
-      {
-        "num": 7,
-        "name": "阿莫西林7",
-        "specification": 12,
-        "production": "湖北",
-        "unit": "盒",
-        "batchNum": 1010113,
-        "receive": {}
-      },
-      {
-        "num": 8,
-        "name": "阿莫西林8",
-        "specification": 12,
-        "production": "湖北",
-        "unit": "盒",
-        "batchNum": 1010114,
-        "receive": {}
-      },
-      {
-        "num": 9,
-        "name": "阿莫西林9",
-        "specification": 12,
-        "production": "湖北",
-        "unit": "盒",
-        "batchNum": 1010115,
-        "receive": {}
-      },
-      {
-        "num": 10,
-        "name": "阿莫西林10",
-        "specification": 12,
-        "production": "湖北",
-        "unit": "盒",
-        "batchNum": 1010116,
-        "receive": {}
-      }
-    ]
+    medicineList:app.globalData.medicineList,
   },
   //自定义事件
   refresh:function(){
-    wx.navigateTo({
+    wx.redirectTo({
       url: './medicineM',
     });
   },
@@ -116,6 +25,45 @@ Page({
       url:'../personal/personal'
     })
   },
+  changeColor:function(e){
+    let num = e.currentTarget.dataset.num;
+    let color = '#c0c0c0';
+    let inx = null;
+    this.data.medicineList.forEach((item,index)=>{
+      if(item.num===num){
+        item.color==='red'?color='#c0c0c0':color='red';
+        inx = index;
+      }
+    });
+    this.setData({
+      [`medicineList[${inx}].color`]:color,
+    });
+    app.globalData.medicineList.forEach((item)=>{
+      this.data.medicineList.forEach((itemTwo)=>{
+        if(itemTwo.num===item.num){
+          item.color=itemTwo.color;
+        }
+      });
+    });
+  },
+  search:function(e){
+    const searchData = e.detail.value;
+    let newData = app.globalData.medicineList.filter((item)=>{
+      for(let key in item){
+        if(key==='specification'&&searchData===(item[key]+'片')){
+          return true;
+        }else if(searchData===(item[key]+'')&&key!=='specification'){
+          return true;
+        }else if(searchData===''){
+          return true;
+        }
+      }
+      return false;
+    });
+    this.setData({
+      medicineList:newData,
+    });
+  },
 
   /**
    * 生命周期函数--监听页面加载
@@ -127,8 +75,14 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    bgMusic.title = 'hospital';
-    bgMusic.src = 'https://m701.music.126.net/20191121171000/490f2bc437bfe16f3549c8a6c8fc8d54/jdyyaac/0553/535f/5152/296e44119ed52c24cdc4f80330096bfc.m4a';
+    player();
+    function player() {
+      bgMusic.title = "his";
+      bgMusic.src = "https://m701.music.126.net/20191121171000/490f2bc437bfe16f3549c8a6c8fc8d54/jdyyaac/0553/535f/5152/296e44119ed52c24cdc4f80330096bfc.m4a";
+      bgMusic.onEnded(() => {
+        player();
+      })
+    }
   },
 
   /**

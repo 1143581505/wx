@@ -11,7 +11,7 @@ Component({
    * 组件的初始数据
    */
   data: {
-    inputValue: ''
+    
   },
 
   /**
@@ -19,10 +19,11 @@ Component({
    */
   methods: {
     bindKeyInput(e) {
-        this.setData({
-          inputValue: e.detail.value
-        })
-      },
+      let myDetail = {
+        value:e.detail.value,
+      }
+      this.triggerEvent('myevent',myDetail);
+    },
     resetClick() {
       this.setData({
         inputValue: ''

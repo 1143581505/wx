@@ -34,14 +34,18 @@ Component({
       wx.chooseLocation();
     },
     playMessage:function(){
-      wx.wx.navigateTo({
+      wx.navigateTo({
         url: '../../pages/message/message',
       });
     },
     refresh:function(){
       this.triggerEvent('myevent');
     },
-    playVideo:function(){},
+    playVideo:function(){
+      wx.navigateTo({
+        url: '../../pages/play-video/play-video',
+      });
+    },
   },
   //组件的生命周期
   lifetimes:{
