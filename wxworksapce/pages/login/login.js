@@ -18,8 +18,8 @@ Page({
     let{username,password,adminPassword,adminUsername}=this.data;
     let{globalUsername,globalPassword,num}=app.globalData;
     if(username===adminUsername&&password===adminPassword){
-      wx.redirectTo({
-        url:'../medicineM/medicineM',
+      wx.reLaunch({
+        url:'../index/index',
       });
     }else{
       if(username===null||password===null){
@@ -89,7 +89,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+   
   },
 
   /**

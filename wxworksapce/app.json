@@ -1,13 +1,23 @@
 {
   "pages": [
+<<<<<<< HEAD
     "pages/medicineM/medicineM",
+=======
+    "pages/index/index",
+    "pages/feedback/feedback",
+    "pages/message/message",
+>>>>>>> 4871f41654d48f66ca8b799649e8aaae8ad63a42
     "pages/login/login",
     "pages/personal/personal",
     "pages/register/register",
     "pages/forget-password/forget-password",
+<<<<<<< HEAD
     
     "pages/feedback/feedback",
 	  "pages/message/message",
+=======
+    "pages/medicineM/medicineM",
+>>>>>>> 4871f41654d48f66ca8b799649e8aaae8ad63a42
     "pages/play-video/play-video"
   ],
   "permission": {
