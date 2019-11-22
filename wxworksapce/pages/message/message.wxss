@@ -7,6 +7,36 @@
 	height: 100%;
 }
 .search{
+  border:1rpx solid #777;
+  border-radius: 30rpx;
+  height: 60rpx;
+  margin:10rpx 30rpx;
+  display:flex;
+}
+.search .search_input{
+  display: inline;
+  width:100%;
+  height: 100%;
+  margin: auto;
+  font-size: 24rpx;
+}
+.search .search_img{
+  height: 40rpx;
+  width: 40rpx;
+  display: inline-flex;
+  margin: auto 20rpx;
+  border-radius: 50%;
+}
+.search .refresh_img{
+  height: 40rpx;
+  width: 40rpx;
+  display: inline-flex;
+  margin:auto 20rpx;
+  border-radius: 10rpx;
+  border-radius: 50%;
+}
+
+/* .search{
 	height: 50rpx;
 	background: #ccc;
 	width: 90%;
@@ -18,7 +48,7 @@
 }
 .search input{
 	display: inline-block;
-}
+} */
 
 .display{
 	width: 90%;

@@ -19,7 +19,7 @@ Page({
     let{globalUsername,globalPassword,num}=app.globalData;
     if(username===adminUsername&&password===adminPassword){
       wx.reLaunch({
-        url:'../medicineM/medicineM',
+        url:'../index/index',
       });
     }else{
       if(username===null||password===null){
@@ -89,7 +89,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    
+   
   },
 
   /**
