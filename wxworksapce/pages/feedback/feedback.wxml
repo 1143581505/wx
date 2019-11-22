@@ -1,6 +1,6 @@
 <view class="feedback">
   <!-- 顶部导航 -->
-  <MyTitle></MyTitle>
+  <MyTitle bind:myevent="refresh"></MyTitle>
   <!-- 按钮导航 -->
   <view class="navigator-btns">
     <view class="firstLine" hover-class="none" hover-stop-propagation="false">

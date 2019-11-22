@@ -3,7 +3,7 @@
   <!-- 顶部导航 -->
   <MyTitle bind:myevent="refresh"></MyTitle>
   <!-- 搜索框 -->
-  <MyInput></MyInput>
+  <MyInput bind:myevent="search"></MyInput>
   <!-- 按钮导航 -->
   <view class="navigator-btns">
     <button><text>库存管理</text></button>
@@ -36,7 +36,7 @@
           <view class="td">{{item.unit}}</view>
           <view class="td medicineBatchNum">{{item.batchNum}}</view>
           <view class="td">
-            <i style="color:#c0c0c0" class="fa fa-file-text fa-lg" aria-hidden="true"></i>
+            <i bind:tap="changeColor" data-num="{{item.num}}" style="color:{{item.color}}" class="fa fa-file-text fa-lg" aria-hidden="true"></i>
           </view>
         </view>
       </view>

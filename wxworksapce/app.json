@@ -7,9 +7,8 @@
     "pages/personal/personal",
     "pages/register/register",
     "pages/forget-password/forget-password",
-    "pages/medicineM/medicineM"
-	  
-  
+    "pages/medicineM/medicineM",
+    "pages/play-video/play-video"
   ],
   "permission": {
     "scope.userLocation": {

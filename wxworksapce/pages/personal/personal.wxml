@@ -1,7 +1,7 @@
 <!--pages/personal/personal.wxml-->
 <view class="personal">
   <!-- 顶部导航 -->
-  <MyTitle></MyTitle>
+  <MyTitle bind:myevent="refresh"></MyTitle>
   <!-- 搜索框 -->
   <MyInput></MyInput>
   <!-- 按钮导航 -->
