@@ -1,3 +1,5 @@
+var util = require('../../utils/util');
+
 Page({
 
   /**
@@ -11,6 +13,9 @@ Page({
     wx.navigateTo({
       url: '../feedback/feedback',
     });
+  },
+  toCallPhone() {
+    util.callPhone();
   },
   signOk(e) {
     this.setData({

@@ -1,3 +1,4 @@
+var util = require('../../utils/util');
 Page({
 
   /**
@@ -17,6 +18,9 @@ Page({
     this.setData({
       userdurg: false
     })
+  },
+  toCallPhone() {
+    util.callPhone();
   },
   submit() {
     wx.showToast({

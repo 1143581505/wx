@@ -1,4 +1,4 @@
-@import '../../style/fontawesome.wxss'
+@import '../../style/fontawesome.wxss';
 .search {
   border: 1rpx solid #777;
   border-radius: 30rpx;

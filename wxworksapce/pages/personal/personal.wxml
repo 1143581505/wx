@@ -9,7 +9,7 @@
     <view class="firstLine" hover-class="none" hover-stop-propagation="false">
       <button><text>实时病例</text></button>
       <button><text>医生建议</text></button>
-      <button><text>联系我们</text></button>
+      <button open-type="contact"><text>联系我们</text></button>
       <button><text>厂家查询</text></button>
     </view>
     <view class="secondLine" hover-class="none" hover-stop-propagation="false">
@@ -17,7 +17,7 @@
           <button><text>药品接收</text></button>
           <button bind:tap="toFeedback"><text>用药反馈</text></button>
         </view>
-        <button class="help-btn"><text>紧急求助!</text></button>
+        <button class="help-btn" bindtap="toCallPhone"><text>紧急求助!</text></button>
     </view>
   </view>
   <!-- 详情框 -->

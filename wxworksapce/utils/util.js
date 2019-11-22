@@ -14,6 +14,13 @@ const formatNumber = n => {
   return n[1] ? n : '0' + n
 }
 
+function callPhone() {
+  wx.makePhoneCall({
+    phoneNumber: '15534418841',
+  });
+}
+
 module.exports = {
-  formatTime: formatTime
+  formatTime: formatTime,
+  callPhone: callPhone
 }

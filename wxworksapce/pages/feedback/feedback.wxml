@@ -7,12 +7,12 @@
       <button><text>用药反馈</text></button>
       <button><text>实时病例</text></button>
       <button><text>医生建议</text></button>
-      <button><text>联系我们</text></button>
+      <button open-type="contact"><text>联系我们</text></button>
     </view>
     <view class="secondLine" hover-class="none" hover-stop-propagation="false">
         <view class="" hover-class="none" hover-stop-propagation="false">
         </view>
-        <button class="help-btn"><text>紧急求助!</text></button>
+        <button class="help-btn"  bindtap="toCallPhone"><text>紧急求助!</text></button>
     </view>
   </view>
   <!-- 反馈部分 -->

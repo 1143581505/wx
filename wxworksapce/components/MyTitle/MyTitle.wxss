@@ -10,7 +10,3 @@
 .my_title .nav_right image{
   margin-right: 20rpx;
 }
-.my_title .nav_right .refresh_img{
-  border-radius: 50%;
-  margin-bottom: 10rpx;
-}

@@ -1,11 +1,11 @@
 {
   "pages": [
-    
+    "pages/medicineM/medicineM",
     "pages/login/login",
     "pages/personal/personal",
     "pages/register/register",
     "pages/forget-password/forget-password",
-    "pages/medicineM/medicineM",
+    
     "pages/feedback/feedback",
 	  "pages/message/message",
     "pages/play-video/play-video"

@@ -9,7 +9,7 @@
     <button><text>库存管理</text></button>
     <button><text>厂家查询</text></button>
     <button bind:tap="toFeedback"><text>药品反馈</text></button>
-    <button><text>联系我们</text></button>
+    <button open-type="contact"><text>联系我们</text></button>
     <button bind:tap="toPersonal"><text>个人领用管理</text></button>
     <button><text>区县领用管理</text></button>
     <button><text>医院领用管理</text></button>
