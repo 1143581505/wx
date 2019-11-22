@@ -36,17 +36,29 @@ Page({
 	}]
   },
   toOtherurl(e){
-	 if(app.globalData.globalUsername.length>0){
-	wx.navigateTo({
-		url:e.currentTarget.dataset.url
-		}) 
-	 }else{
+	let username = wx.getStorageSync('username');
+	console.log(username);
+	console.log(app.globalData.num);
+	if(username==='1143581505'){
 		wx.navigateTo({
-		  url:'../login/login'
+			url:e.currentTarget.dataset.url
+		})
+	}else if(app.globalData.num===0){
+		wx.navigateTo({
+			url:'../login/login'
 		}) 
-	 }
-	  
-	 
+	}
+	app.globalData.globalUsername.forEach((item)=>{
+		if(username===item){
+			wx.navigateTo({
+				url:e.currentTarget.dataset.url
+			}) 
+		}else if((app.globalData.globalUsername.length-1)===index){
+			wx.navigateTo({
+				url:'../login/login'
+			}) 
+		}
+	});
   },
 
   /**

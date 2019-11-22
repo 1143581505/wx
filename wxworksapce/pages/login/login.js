@@ -21,6 +21,10 @@ Page({
       wx.reLaunch({
         url:'../index/index',
       });
+      wx.setStorage({
+        key:'username',
+        data:'1143581505'
+      });
     }else{
       if(username===null||password===null){
         this.setData({
@@ -38,10 +42,14 @@ Page({
           exit = true;
           if(globalPassword[item]===password){
             wx.redirectTo({
-              url:'../medicineM/medicineM',
+              url:'../index/index',
             });
             this.setData({
               tipsText:'',
+            });
+            wx.setStorage({
+              key:'username',
+              data:username,
             });
           }else{
             this.setData({
