@@ -112,8 +112,98 @@ App({
         ],
 		
 		// 药品管理
-		stockControl:[
-			
+		storeControl:[
+			{
+			  "num": 1,
+			  "name": "阿莫西林1",
+			  "specification": 12,
+			  "changeStore":0,
+			  "log":['2019-08-10 入库15箱',"2019-10-20 出库5箱"]
+			},
+			{
+			 "num": 2,
+			 "name": "阿莫西林2",
+			 "specification": 12,
+			  "changeStore":0,
+			 "log":['2019-08-10 入库15箱',"2019-10-20 出库5箱"]
+			},
+			{
+			 "num": 3,
+			 "name": "阿莫西林3",
+			 "specification": 12,
+			  "changeStore":0,
+			 "log":['2019-08-10 入库15箱',"2019-10-20 出库5箱"]
+			},
+			{
+			 "num": 4,
+			 "name": "阿莫西林4",
+			 "specification": 12,
+			  "changeStore":0,
+			 "log":['2019-08-10 入库15箱',"2019-10-20 出库5箱"]
+			},
+			{
+			  "num": 5,
+			  "name": "阿莫西林5",
+			  "specification": 12,
+			   "changeStore":0,
+			  "log":['2019-08-10 入库15箱',"2019-10-20 出库5箱"]
+			},
+			{
+			 "num": 6,
+			 "name": "阿莫西林6",
+			 "specification": 12,
+			  "changeStore":0,
+			 "log":['2019-08-10 入库15箱',"2019-10-20 出库5箱"]
+			},
+			{
+			 "num": 7,
+			 "name": "阿莫西林7",
+			 "specification": 12,
+			  "changeStore":0,
+			 "log":['2019-08-10 入库15箱',"2019-10-20 出库5箱"]
+			},
+			{
+			  "num": 8,
+			  "name": "阿莫西林8",
+			  "specification": 12,
+			   "changeStore":0,
+			  "log":['2019-08-10 入库15箱',"2019-10-20 出库5箱"]
+			},
+			{
+			  "num": 9,
+			  "name": "阿莫西林9",
+			  "specification": 12,
+			   "changeStore":0,
+			  "log":['2019-08-10 入库15箱',"2019-10-20 出库5箱"]
+			},
+			{
+			  "num": 10,
+			  "name": "阿莫西林10",
+			  "specification": 12,
+			   "changeStore":0,
+			  "log":['2019-08-10 入库15箱',"2019-10-20 出库5箱"]
+			},
+			{
+			  "num": 11,
+			  "name": "阿莫西林11",
+			  "specification": 12,
+			   "changeStore":0,
+			  "log":['2019-08-10 入库15箱',"2019-10-20 出库5箱"]
+			},
+			{
+			  "num": 12,
+			  "name": "阿莫西林12",
+			  "specification": 12,
+			   "changeStore":0,
+			  "log":['2019-08-17 入库9箱',"2019-10-20 出库8箱"]
+			},
+			{
+			  "num": 13,
+			  "name": "阿莫西林13",
+			  "specification": 12,
+			   "changeStore":0,
+			  "log":['2019-08-12 入库20箱',"2019-10-20 出库9箱"]
+			}
 		]
 		
 		

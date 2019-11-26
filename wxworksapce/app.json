@@ -8,7 +8,8 @@
     "pages/personal/personal",
     "pages/register/register",
     "pages/forget-password/forget-password",
-    "pages/play-video/play-video"
+    "pages/play-video/play-video",
+    "pages/store/store"
   ],
   "permission": {
     "scope.userLocation": {

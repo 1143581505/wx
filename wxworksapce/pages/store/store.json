@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "库存管理",
+  "usingComponents": {
+    "MyTitle": "../components/MyTitle/MyTitle",
+    "MyInput": "../components/MyInput/MyInput"
+  }
+}

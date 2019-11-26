@@ -10,6 +10,11 @@ Page({
     medicineList:app.globalData.medicineList,
   },
   //自定义事件
+  toStore:function(){
+	wx.navigateTo({
+	  url: '../store/store',
+	});  
+  },
   refresh:function(){
     wx.redirectTo({
       url: './medicineM',
@@ -47,6 +52,7 @@ Page({
     });
   },
   search:function(e){
+	  // console.log(e)
     const searchData = e.detail.value;
     let newData = app.globalData.medicineList.filter((item)=>{
       for(let key in item){

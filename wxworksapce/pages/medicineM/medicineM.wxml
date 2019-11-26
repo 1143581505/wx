@@ -6,7 +6,7 @@
   <MyInput bind:myevent="search"></MyInput>
   <!-- 按钮导航 -->
   <view class="navigator-btns">
-    <button><text>库存管理</text></button>
+    <button bindtap="toStore"><text>库存管理</text></button>
     <button><text>厂家查询</text></button>
     <button bind:tap="toFeedback"><text>药品反馈</text></button>
     <button open-type="contact"><text>联系我们</text></button>
