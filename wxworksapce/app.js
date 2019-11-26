@@ -7,7 +7,8 @@ App({
         globalEmail:{},//邮箱保存
         gloablPhone:{},//电话保存
         bgMusic: wx.getBackgroundAudioManager(),//背景音乐的播放
-        medicineList: [
+		
+        medicineList: [  //药品领用数据
             {
               "num": 1,
               "name": "阿莫西林1",
@@ -108,6 +109,13 @@ App({
               "receive": {},
               "color":'#c0c0c0'
             }
-        ],//药品领用数据
+        ],
+		
+		// 药品管理
+		stockControl:[
+			
+		]
+		
+		
     },
 })
