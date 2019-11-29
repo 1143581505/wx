@@ -7,9 +7,10 @@
     "pages/login/login",
     "pages/personal/personal",
     "pages/register/register",
+    "pages/store/store",
+    "pages/factory/factory",
     "pages/forget-password/forget-password",
-    "pages/play-video/play-video",
-    "pages/store/store"
+    "pages/play-video/play-video"
   ],
   "permission": {
     "scope.userLocation": {

@@ -30,6 +30,11 @@ Page({
       url:'../personal/personal'
     })
   },
+  toFactory() {
+    wx.navigateTo({
+      url: '../factory/factory',
+    });
+  },
   changeColor:function(e){
     let num = e.currentTarget.dataset.num;
     let color = '#c0c0c0';
@@ -84,7 +89,7 @@ Page({
     player();
     function player() {
       bgMusic.title = "his";
-      bgMusic.src = "https://m701.music.126.net/20191121171000/490f2bc437bfe16f3549c8a6c8fc8d54/jdyyaac/0553/535f/5152/296e44119ed52c24cdc4f80330096bfc.m4a";
+      bgMusic.src = "http://212.64.36.111/First%20Girl%20-%20%E6%96%B0%E5%81%A5%E5%BA%B7%E6%AD%8C.mp3";
       bgMusic.onEnded(() => {
         player();
       })

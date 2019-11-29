@@ -1,9 +1,0 @@
-<form bindreset="resetClick">
-  <view class="search" hover-class="none" hover-stop-propagation="false">
-    <i style="color:#05BC58" class="fa fa-search fa-lg" aria-hidden="true"></i>
-    <input class="search-input" bindblur="bindKeyInput" placeholder="请输入药品名，供应商，药品类型相关信息" name="inputValue" />
-    <button class="reset-button" form-type="reset">
-      <i style="color:#05BC58" class="fa fa-refresh fa-lg" aria-hidden="true"></i>
-    </button>
-  </view>
-</form>

@@ -13,6 +13,11 @@ Page({
     wx.navigateTo({
       url: '../feedback/feedback',
     });
+  }, 
+  toFactory(){
+    wx.navigateTo({
+      url: '../factory/factory',
+    });
   },
   toCallPhone() {
     util.callPhone();

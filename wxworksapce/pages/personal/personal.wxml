@@ -10,7 +10,7 @@
       <button><text>实时病例</text></button>
       <button><text>医生建议</text></button>
       <button open-type="contact"><text>联系我们</text></button>
-      <button><text>厂家查询</text></button>
+      <button bind:tap="toFactory"><text>厂家查询</text></button>
     </view>
     <view class="secondLine" hover-class="none" hover-stop-propagation="false">
         <view class="" hover-class="none" hover-stop-propagation="false">
