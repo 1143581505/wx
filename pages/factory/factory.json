@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "厂家查询",
+  "usingComponents": {
+    "MyTitle": "../components/MyTitle/MyTitle",
+    "MyInput": "../components/MyInput/MyInput"
+  }
+}

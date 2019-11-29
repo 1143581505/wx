@@ -1,0 +1,46 @@
+/* 按钮组 */
+@import '../../utils/MyButton.wxss';
+/* 详情框 */
+@import '../../utils/frame.wxss';
+.table-outer{
+  height:calc(100% - 430rpx);
+}
+/* 药品数据 */
+.table{
+  border:1rpx solid #ccc;
+}
+.tr {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.th,.td {
+  font-size: 20rpx;
+  font-weight: 700;
+  width: 40%;
+  padding: 10rpx;
+  text-align: center;
+  border: 1rpx solid;
+}
+.td{
+  font-weight: 500;
+}
+.medicineName,.medicineBatchNum {
+  width: 80%;
+}
+/* 表格组的按钮 */
+.table-btns{
+  display: flex;
+  justify-content: flex-end;
+}
+.table-btns button{
+  line-height: 60rpx;
+  font-size: 30rpx;
+  font-weight: 500;
+  padding: 0;
+  margin: 10rpx 20rpx;
+  width: 140rpx;
+  min-height: 60rpx;
+  border: 1px solid #666;
+  border-top:2rpx solid buttonhighlight;
+}

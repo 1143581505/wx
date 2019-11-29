@@ -1,0 +1,45 @@
+<view class="factory">
+  <!-- 顶部导航 -->
+  <MyTitle bind:myevent="refresh"></MyTitle>
+  <!-- 搜索框 -->
+  <MyInput bind:myevent="search"></MyInput>
+
+<!-- 地址选择  开始 -->
+<view class="section">
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      <text>{{region[0]}}</text>
+      <text>{{region[1]}}</text>
+      <text>{{region[2]}}</text>
+    </view>
+  </picker>
+</view>
+<!-- 地址选择  结束 -->
+
+  <view class="table-outer">
+   <view  class="table-inner">
+    <scroll-view class="detail" scroll-y>
+      <view class="table">
+        <view class="tr bg-w">
+          <view class="th factory-num">编号</view>
+          <view class="th factory-name">厂家</view>
+          <view class="th factory-address">地址</view>
+          <view class="th factory-phone">联系电话</view>
+          <view class="th factory-product">主营产品</view>
+          <view class="th factory-more">详情</view>
+        </view>
+        <view class="tr bg-g" wx:for="{{factoryList}}" wx:key="num">
+          <view class="td factory-num">{{item.factoryNum}}</view>
+          <view class="td factory-name">{{item.factoryName}}</view>
+          <view class="td factory-address">{{item.address}}</view>
+          <view class="td factory-phone">{{item.factoryPhone}}</view>
+          <view class="td factory-product">{{item.product}}</view>
+          <view class="td factory-more">
+            <navigator>...</navigator>
+          </view>
+        </view>
+      </view>
+     </scroll-view>
+   </view>
+  </view>
+</view>

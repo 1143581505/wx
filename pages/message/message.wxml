@@ -1,0 +1,22 @@
+<!--pages/message/message.wxml-->
+<view class="message">
+	<!-- <view class="search">
+		<i class="fa fa-search" aria-hidden="true"></i>
+		<input placeholder="" type="text"/>
+	</view> -->
+	<view class="search">
+	  <image class="search_img" src="../../icons/search.png"></image>
+	  <input class="search_input" placeholder="输入日期进行筛选"/>
+	  <image class="refresh_img" src="../../icons/refresh_blank.png"></image>
+	</view>
+	
+	<scroll-view class="display">
+		<view  wx:for="{{messages}}" class="row" bind:tap="toRead" data-index="{{index}}">
+			<view class="title">
+				<i style="color:blue;display: {{item.read?'none':''}};" class="fa fa-circle" aria-hidden="true"></i>
+			{{item.title}}</view>
+			<view class="time">{{item.time}}</view>
+			<view class="message">{{item.message}}</view>
+		</view>
+	</scroll-view>
+</view>

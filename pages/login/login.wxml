@@ -1,0 +1,23 @@
+<view class="container">
+  <view class="top">
+      登录页面
+  </view>
+  <view class="tips">{{tipsText}}</view>
+  <view class="middle">
+      <view >
+        <label >用户名：</label><input data-attr="username" type='text' value="{{username}}" bindblur="changeInput"  placeholder="用户名"/>
+      </view>
+      <view >
+        <label >密码：</label><input data-attr="password" type="text" value="{{password}}" password bindblur="changeInput"  password="{{true}}" placeholder="密码"/>
+      </view>
+      <button type="primary" bind:tap="loginClick">登录</button>
+  </view>
+  <view class="bottom">
+      <view class="bottom1">
+          <text bind:tap="forgetClick">忘记密码</text>|<text bind:tap="registerClick">用户注册</text>
+      </view>
+      <view class="bottom2">
+          <text >登录即代表阅读并同意</text><text style="color:blueviolet;cursor:pointer;" bind:tap="serveClick">服务协议</text>
+      </view>
+  </view>
+</view>

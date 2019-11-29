@@ -1,0 +1,48 @@
+/* 按钮导航 */
+@import '../../utils/MyButton.wxss';
+/* 详情框 */
+@import '../../utils/frame.wxss';
+.table-outer{
+  height: calc(100% - 430rpx);
+}
+
+page{
+	height: 100%;
+	width:100%;
+}
+.main{
+	height: 63%;
+	font-size: 20rpx;
+	margin: 10rpx;
+	/* padding: 30rpx; */
+	display: flex;
+	flex-direction: column;
+	align-content: space-between;
+	
+}
+.sign{
+  margin-top: 20rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.sign button{
+  background-color: #05BC58;
+  margin-right: 0rpx;
+  line-height: 60rpx;
+  font-size:25rpx;
+  font-weight: 500;
+  padding: 0;
+  width: 150rpx;
+  min-height: 60rpx;
+  border: 1px solid #666;
+  border-top:2rpx solid buttonhighlight;
+}
+.sign .sign-name text{
+	font-size:25rpx;
+}
+.sign .sign-name input{
+  height: 10rpx;
+	display: inline-block;
+  border: 1rpx solid;
+}
